@@ -79,8 +79,8 @@ const deleteButton=async (id)=>{
         <h1 class="todo-items-heading">
             My <span class="todo-items-heading-subpart">Tasks</span>
         </h1>
-        <ul>{tasks.map((each)=><p className='label-container para'>{each.text}<button className='delete_button' onClick={()=> deleteButton(each.id) }>Delete </button></p>)}
-        </ul>
+        {tasks.map((each)=><p className='label-container para'>{each.text}<button className='delete_button' onClick={()=> deleteButton(each.id) }>Delete </button></p>)}
+        
       </div>
     </div>
   );
